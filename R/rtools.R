@@ -13,7 +13,11 @@ shifter <- function(x, n) {
 #' Transform a matrix into a ggplottable data.frame
 make.ggplot.df <- function(dmat, dataset = NULL, variable2numeric = T){
   pd <- as.data.frame(dmat)
-  pd$row <- 1:nrow(pd)
+  if ( !is.null(dimnames(dmat)) ){
+    pd$row <- dimnames(dmat)[[1]]
+  } else {
+    pd$row <- 1:nrow(pd)
+  }
   pd <- reshape2::melt(pd, id.vars = c('row'))
   
   if (variable2numeric){
