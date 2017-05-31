@@ -197,7 +197,7 @@ loaddir.h5.erp <- function(indir, element, pattern = '*_ERPdata.h5'){
 #' @export
 d1h5_to_array <- function(h5handle, dpath){
   
-  d1ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd1ID') )
+  d1ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd1ID') )
   
   data <- h5handle[dpath][]
   dimnames(data) <- list(d1ID)
@@ -215,21 +215,22 @@ d1h5_to_array <- function(h5handle, dpath){
 #' 
 #' @return Data in 'dpath' as a numeric array
 #'
+#' @importFrom h5 list.attributes
 #' @importFrom h5 h5attr
 #'
 #' @export
 d2h5_to_array <- function(h5handle, dpath){
   
-  attr.arr <- list.attributes(h5handle[dpath])
+  attr.arr <- h5::list.attributes(h5handle[dpath])
   
   if ('rowID' %in% attr.arr){
     # todo: legacy mode. Remove this in the future.
-    d1ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'rowID') )
-    d2ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'colID') )
+    d1ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'rowID') )
+    d2ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'colID') )
     
   } else {
-    d1ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd1ID') )
-    d2ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd2ID') )
+    d1ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd1ID') )
+    d2ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd2ID') )
   }
   
   data <- h5handle[dpath][]
@@ -253,9 +254,9 @@ d2h5_to_array <- function(h5handle, dpath){
 #' @export
 d3h5_to_array <- function(h5handle, dpath){
   
-  d1ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd1ID') )
-  d2ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd2ID') )
-  d3ID <-  h5attr2dimname( h5attr(h5handle[dpath], 'd3ID') )
+  d1ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd1ID') )
+  d2ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd2ID') )
+  d3ID <-  h5attr2dimname( h5::h5attr(h5handle[dpath], 'd3ID') )
   
   data <- h5handle[dpath][]
   dimnames(data) <- list(d1ID, d2ID, d3ID)
