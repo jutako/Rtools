@@ -15,6 +15,7 @@ Attribute data in dimnames() compatible format
 \description{
 Convert HDF5 attribute to dimnames() combatible format
 Note: HDF5 representation of char arrays / cellstr is user defined.
-Using the convention of collapsing into single string with ";" 
+Using the convention of collapsing into single string with ";"
 separators.
 }
+

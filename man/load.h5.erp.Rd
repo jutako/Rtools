@@ -14,6 +14,7 @@ A list of single-trial ERP data matrices
 }
 \description{
 Load all single-trial ERPs from HDF5 file
-Note: assumes structure /erp/<dataset id> use loaddir.h5*() to 
+Note: assumes structure /erp/<dataset id> use loaddir.h5*() to
 load from single files.
 }
+

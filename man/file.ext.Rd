@@ -19,3 +19,4 @@ Get file extension from filename
 file.ext('a.b')
 
 }
+

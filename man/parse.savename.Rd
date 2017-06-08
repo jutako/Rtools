@@ -15,3 +15,4 @@ A list of elements parsed from file name
 \description{
 Parse a CTAP/BWRC casename, often used in filenames when saving data.
 }
+

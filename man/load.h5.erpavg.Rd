@@ -14,6 +14,7 @@ A list of erpavg data matrices
 }
 \description{
 Load all average ERPs from HDF5 file
-Note: assumes structure /erpavg/<dataset id> use loaddir.h5*() to 
+Note: assumes structure /erpavg/<dataset id> use loaddir.h5*() to
 load from single files.
 }
+

@@ -17,3 +17,4 @@ Data in 'dpath' as a numeric array
 \description{
 Transform HDF5 numeric matrix to array
 }
+
