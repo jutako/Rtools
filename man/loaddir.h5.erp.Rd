@@ -21,9 +21,11 @@ Load ERP data from all hdf5 files in a directory, output a list.
 Uses loaddir.h5() and adds some metadata on top.
 }
 \examples{
-indir <- '~/ukonkuva/projects/SeamlessCare_2015-16/analysis/ctap_branch/erp/prepro/ica/ERP_nback_allNTrg/this/figures/CTAP_plot_ERP/set6_fun3/'
+\dontrun{
+indir <- '/path/to/h5/'
 pattern <- '.*NB01.*_ERPdata.h5'
 element <- '/erp'
+}
 
 }
 

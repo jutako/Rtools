@@ -127,9 +127,11 @@ load.h5.erp <- function(infile){
 #' @return A named list of data matrices
 #'
 #' @examples
+#' \dontrun{
 #' h5_file_list <- c('file1.h5','file2.h5')
 #' element <- '/erp'
 #' loadfl.h5(h5_file_list, element)
+#' }
 #'
 #' @export
 loadfl.h5 <- function(h5_file_list, element, element_names = NULL){
@@ -154,9 +156,11 @@ loadfl.h5 <- function(h5_file_list, element, element_names = NULL){
 #' @return A list of data matrices
 #'
 #' @examples
-#' indir <- '~/ukonkuva/projects/SeamlessCare_2015-16/analysis/ctap_branch/erp/prepro/ica/ERP_nback_allNTrg/this/figures/CTAP_plot_ERP/set6_fun3/'
+#' \dontrun{
+#' indir <- '/path/to/h5/'
 #' pattern <- '.*NB01.*_ERPdata.h5'
 #' element <- '/erp'
+#' }
 #'
 #' @export
 loaddir.h5 <- function(indir, element, pattern = '*.h5'){
@@ -186,9 +190,13 @@ loaddir.h5 <- function(indir, element, pattern = '*.h5'){
 #' @return A list of data matrices
 #'
 #' @examples
-#' indir <- '~/ukonkuva/projects/SeamlessCare_2015-16/analysis/ctap_branch/erp/prepro/ica/ERP_nback_allNTrg/this/figures/CTAP_plot_ERP/set6_fun3/'
+#' \dontrun{
+#' indir <- '/path/to/h5/'
 #' pattern <- '.*NB01.*_ERPdata.h5'
 #' element <- '/erp'
+#' }
+#'
+#' @importFrom plyr ldply
 #'
 #' @export
 loaddir.h5.erp <- function(indir, element, pattern = '*_ERPdata.h5'){
@@ -330,10 +338,12 @@ h5attr2dimname <- function(attrdata){
 #' @importFrom h5 list.datasets
 #'
 #' @examples
+#' \dontrun{
 #' hdf5file = '/home/jkor/tmp/test.h5'
 #' dgroup <- '/erp'
 #' dataset <- 'SEAMPILOT301'
 #' attrib <- 'maxdim'
+#' }
 #'
 #' @export
 h5.get.dataset.attr <- function(hdf5file, dgroup, dataset, attrib){

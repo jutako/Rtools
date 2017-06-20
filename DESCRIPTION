@@ -5,6 +5,14 @@ Authors@R: person("Jussi", "Korpela", email = "jussitapiokorpela@gmail.com", rol
 Description: A set of miscellaneous tools to help in using R.
 Depends:
     R (>= 3.3.0)
+Imports: h5,
+    utils,
+    reshape2,
+    plyr,
+    tibble,
+    xlsx,
+    DBI,
+    RSQLite
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -22,10 +22,12 @@ Attribute data
 Fetch some attribute from a HDF5 file
 }
 \examples{
+\dontrun{
 hdf5file = '/home/jkor/tmp/test.h5'
 dgroup <- '/erp'
 dataset <- 'SEAMPILOT301'
 attrib <- 'maxdim'
+}
 
 }
 

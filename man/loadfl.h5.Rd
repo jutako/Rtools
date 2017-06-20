@@ -20,9 +20,11 @@ A named list of data matrices
 Load data from an array of hdf5files, output a list of numeric arrays
 }
 \examples{
+\dontrun{
 h5_file_list <- c('file1.h5','file2.h5')
 element <- '/erp'
 loadfl.h5(h5_file_list, element)
+}
 
 }
 
