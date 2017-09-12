@@ -10,9 +10,9 @@ Follow these steps to install the package.
 
 0. Make sure you have some HDF5 (http://hdfgroup.org/HDF5/) stuff installed:
 
-Debian-based (e.g. Debian >= 8.0, Ubuntu >= 15.04): 'sudo apt-get install libhdf5-dev
-Old Debian-based (e.g Debian < 8.0, Ubuntu < 15.04): Install from source (see INSTALL)
-OS X using Homebrew: 'brew install homebrew/science/hdf5 --enable-cxx'
+Debian-based (e.g. Debian >= 8.0, Ubuntu >= 15.04): 'sudo apt-get install libhdf5-dev  
+Old Debian-based (e.g Debian < 8.0, Ubuntu < 15.04): Install from source (see INSTALL)  
+OS X using Homebrew: 'brew install homebrew/science/hdf5 --enable-cxx'  
 RPM-based (e.g Fedora): 'sudo yum install hdf5-devel'
 
 1. clone the repository to your machine:
@@ -27,5 +27,3 @@ require(devtools)
 devtools::install('path-to-Rtools-repo')
 require(Rtools)
 ```
-
-If the install fails
