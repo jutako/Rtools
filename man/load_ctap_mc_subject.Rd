@@ -17,4 +17,3 @@ A tibble with the contents of the subject_sheet sheet/table
 \description{
 Load CTAP MC subject sheet/table. File can be xlsx or sqlite.
 }
-

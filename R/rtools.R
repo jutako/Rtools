@@ -129,3 +129,34 @@ make.ggplot.df <- function(dmat,
   }
   pd
 }
+
+
+#' Detect substring and replace if there is a match
+#'
+#' @description
+#' Replaces elements in character vector 'string' with elements found in
+#' 'replacement', if the element matches one of the patterns in
+#' 'pattern'. Matches of pattern[i] are replaced with replacement[i].
+#'
+#' Intended usage is to convert a vector of path strings into a vector
+#' of class labels.
+#'
+#' @param string Input vector. Either a character vector, or something coercible to one.
+#' @param pattern Vector of patterns to look for. See stringr::str_which() for details.
+#' @param replacement Vector of replacement strings. Has to be of the same length as pattern.
+#'
+#' @return A character vector.
+#'
+#' @importFrom stringr str_which
+#'
+#' @export
+mystr_detect_replace <- function(string, pattern, replacement = pattern){
+
+  out <- string
+
+  for (i in 1:length(pattern)) {
+    out[stringr::str_which(string, pattern[[i]])] <- replacement[[i]]
+  }
+
+  out
+}

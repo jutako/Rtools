@@ -22,4 +22,3 @@ A tibble with the contents of the blocks_sheet sheet/table
 \description{
 Load CTAP MC blocks sheet/table. File can be xlsx or sqlite.
 }
-

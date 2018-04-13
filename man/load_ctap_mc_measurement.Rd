@@ -20,4 +20,3 @@ A tibble with the contents of the measurement_sheet sheet/table
 \description{
 Load CTAP MC measurement sheet/table. File can be xlsx or sqlite.
 }
-

@@ -19,4 +19,3 @@ Get file extension from filename. For '/a/b.c' returns 'c'.
 file_ext('/a/b.c')
 
 }
-

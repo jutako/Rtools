@@ -21,4 +21,3 @@ positive n shifts things to the left, negative to the right
 
 From: http://stackoverflow.com/questions/30542128/circular-shifting-arrays-in-r-by-distance-n
 }
-

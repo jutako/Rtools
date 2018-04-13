@@ -18,4 +18,3 @@ Note: HDF5 representation of char arrays / cellstr is user defined.
 Using the convention of collapsing into single string with ";"
 separators.
 }
-

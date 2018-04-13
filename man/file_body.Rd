@@ -19,4 +19,3 @@ Extract filename without extension. For '/a/b.c' returns 'b'.
 file_body('/a/b.c')
 
 }
-

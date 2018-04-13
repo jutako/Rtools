@@ -17,4 +17,3 @@ Element 'element' from file as a numeric array
 \description{
 Load data from HDF5 file
 }
-

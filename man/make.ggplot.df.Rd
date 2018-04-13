@@ -19,4 +19,3 @@ A data.frame representation of dmat
 \description{
 Converts a numeric matrix into a ggplot compatible data.frame.
 }
-
